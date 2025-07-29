@@ -3,9 +3,9 @@ from utils.load_data import load_csv
 import pandas as pd
 import plotly.express as px
 
-df_cab_rides_preprocessed = load_csv('Dataset\cab_ride_preprocessed.csv')
-df_weather_preprocessed = load_csv('Dataset\weather_preprocessed.csv')
-df_merge_data = load_csv('Dataset\merge_data.csv')
+df_cab_rides_preprocessed = load_csv('Dataset/cab_ride_preprocessed.csv')
+df_weather_preprocessed = load_csv('Dataset/weather_preprocessed.csv')
+df_merge_data = load_csv('Dataset/merge_data.csv')
 
 color_map_uber = {
     'Shared Ride': '#b3cde3',   

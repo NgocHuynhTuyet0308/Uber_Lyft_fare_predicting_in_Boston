@@ -13,8 +13,8 @@ model_results = {
             'RMSE': 1.9931,
             'MAE': 1.2047,
             'Training time': 922.79,
-            'Model_pkl': 'Model\model_pkl\gradient_boosting_model.pkl',
-            'Model_result_csv': 'Model\model_result_csv\GB_Uber.csv'
+            'Model_pkl': 'Model/model_pkl/gradient_boosting_model.pkl',
+            'Model_result_csv': 'Model/model_result_csv/GB_Uber.csv'
         },
         'Random_Forest': {
             'R2': 0.9506,
@@ -22,8 +22,8 @@ model_results = {
             'RMSE': 1.9013,
             'MAE': 1.16443,
             'Training time': 609.78,
-            'Model_pkl': 'Model\model_pkl\random_forest_model_uber.pkl',
-            'Model_result_csv': 'Model\model_result_csv\RF_Uber.csv'
+            'Model_pkl': 'Model/model_pkl/random_forest_model_uber.pkl',
+            'Model_result_csv': 'Model/model_result_csv/RF_Uber.csv'
         }
     },
     'Lyft': {
@@ -33,8 +33,8 @@ model_results = {
             'RMSE': 1.42576,
             'MAE': 0.9688,
             'Training time': 923.85,
-            'Model_pkl': 'Model\model_pkl\gradient_boosting_model_lyft.pkl',
-            'Model_result_csv': 'Model\model_result_csv\GB_Lyft.csv'
+            'Model_pkl': 'Model/model_pkl/gradient_boosting_model_lyft.pkl',
+            'Model_result_csv': 'Model/model_result_csv/GB_Lyft.csv'
         },
         'Random_Forest': {
             'R2': 0.9814,
@@ -42,8 +42,8 @@ model_results = {
             'RMSE': 1.37193,
             'MAE': 0.9467,
             'Training time': 584.84,
-            'Model_pkl': 'Model\model_pkl\random_forest_model_lyft.pkl',
-            'Model_result_csv': 'Model\model_result_csv\RF_Lyft.csv'
+            'Model_pkl': 'Model/model_pkl/random_forest_model_lyft.pkl',
+            'Model_result_csv': 'Model/model_result_csv/RF_Lyft.csv'
         }
     }
 }

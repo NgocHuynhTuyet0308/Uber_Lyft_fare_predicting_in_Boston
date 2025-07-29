@@ -5,10 +5,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-df_cab_rides_preprocessed = load_csv('Dataset\cab_ride_preprocessed.csv')
-df_weather_preprocessed = load_csv('Dataset\weather_preprocessed.csv')
-df_cabride = load_csv('Dataset\cab_rides.csv')
-df_weather = load_csv('Dataset\weather.csv')
+df_cab_rides_preprocessed = load_csv('Dataset/cab_ride_preprocessed.csv')
+df_weather_preprocessed = load_csv('Dataset/weather_preprocessed.csv')
+df_cabride = load_csv('Dataset/cab_rides.csv')
+df_weather = load_csv('Dataset/weather.csv')
 
 def check_missing_values(df):
     missing_values_series = df.isnull().sum()

@@ -5,9 +5,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-df_cab_rides_preprocessed = load_csv('Dataset\cab_ride_preprocessed.csv')
-df_weather_preprocessed = load_csv('Dataset\weather_preprocessed.csv')
-df_merge_data = load_csv('Dataset\merge_data.csv')
+df_cab_rides_preprocessed = load_csv('Dataset/cab_ride_preprocessed.csv')
+df_weather_preprocessed = load_csv('Dataset/weather_preprocessed.csv')
+df_merge_data = load_csv('Dataset/merge_data.csv')
 
 col_metric_1, col_metric_2 = st.columns(2)
 

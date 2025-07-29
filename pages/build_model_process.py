@@ -2,7 +2,7 @@ import streamlit as st
 from utils.load_data import load_csv
 import pandas as pd
 
-df_merge_data = load_csv('Dataset\merge_data.csv')
+df_merge_data = load_csv('Dataset/merge_data.csv')
 
 # Description page
 st.title("Model development process")
