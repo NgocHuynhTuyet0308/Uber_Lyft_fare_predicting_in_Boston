@@ -124,7 +124,7 @@ with col3:
 st.subheader('Compare actual and predicted values')
 col4, col5 = st.columns(2)
 with col4:
-    df_compare_GB = load_csv(f'Model\model_result_csv\GB_{st.session_state.cab_type}.csv')
+    df_compare_GB = load_csv(f'Model/model_result_csv/GB_{st.session_state.cab_type}.csv')
     df_subset = df_compare_GB.head(150)
     fig_compare_GB = go.Figure()
     fig_compare_GB.add_trace(go.Scatter(
@@ -156,7 +156,7 @@ with col4:
 
 
 with col5:
-    df_compare_RF = load_csv(f'Model\model_result_csv\RF_{st.session_state.cab_type}.csv')
+    df_compare_RF = load_csv(f'Model/model_result_csv/RF_{st.session_state.cab_type}.csv')
     df_subset = df_compare_RF.head(150)
     fig_compare_RF = go.Figure()
     fig_compare_RF.add_trace(go.Scatter(
