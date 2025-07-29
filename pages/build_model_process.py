@@ -26,7 +26,7 @@ st.write('To predict the fare of each cab type, I decided to use features such a
 st.markdown("""
 - **Date parsing**: To better capture temporal patterns, I decomposed the date and time columns. The date column was split into day, month, and year, while the time column was parsed into hour and minute components.
 """)
-st.image('static\image\date_parsing.jpg', caption='Date parsing', use_container_width=False)
+st.image('static/image/date_parsing.jpg', caption='Date parsing', use_container_width=False)
 df_merge_data['date'] = pd.to_datetime(df_merge_data['date'], errors='coerce')
 df_merge_data['time'] = pd.to_datetime(df_merge_data['time'], errors='coerce')
 
@@ -105,9 +105,9 @@ st.markdown("""
 """)
 col6, col7 = st.columns(2)
 with col6: 
-    st.image('static\image\Gradient_Boosting.png', caption='Gradient Boosting', use_container_width=True)
+    st.image('static/image/Gradient_Boosting.png', caption='Gradient Boosting', use_container_width=True)
 with col7:
-    st.image('static\image\Random_forest.png', caption='Random Forest', use_container_width=True)
+    st.image('static/image/Random_forest.png', caption='Random Forest', use_container_width=True)
 
 
 
