@@ -3,8 +3,8 @@ from utils.load_data import load_csv
 import pydeck as pdk
 import pandas as pd
 
-RAW_CAB_RIDE = 'Dataset\cab_rides.csv'
-RAW_WEATHER = 'Dataset\weather.csv'
+RAW_CAB_RIDE = 'Dataset/cab_rides.csv'
+RAW_WEATHER = 'Dataset/weather.csv'
 
 df_cabride = load_csv(RAW_CAB_RIDE)
 df_weather = load_csv(RAW_WEATHER)
