@@ -50,6 +50,9 @@ model_results = {
 
 # Description page
 st.title("Model performance results")
+st.markdown("""
+	**Source code for creating the model is available on [GitHub](https://github.com/NgocHuynhTuyet0308/Uber_Lyft_fare_predicting_in_Boston/blob/main/notebooks/Model_develop.ipynb).**
+""")
 st.write('This section performs the performance comparision between Gradient Boosting model and Random Forest model.')
 
 
