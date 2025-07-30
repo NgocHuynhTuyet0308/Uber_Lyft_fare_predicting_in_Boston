@@ -12,6 +12,10 @@ df_weather = load_csv(RAW_WEATHER)
 # Description page
 st.title('Project: Uber/ Lyft fare in Boston')
 
+st.markdown("""
+	**Source code is available on [GitHub](https://github.com/NgocHuynhTuyet0308/Uber_Lyft_fare_predicting_in_Boston).**
+""")
+
 st.subheader('Introduction')
 st.write('Unlike traditional public transportation, ' \
 'the pricing of ride-hailing services such as Uber and Lyft is highly dynamic and influenced by various contextual factors. ' \

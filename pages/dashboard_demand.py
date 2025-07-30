@@ -105,7 +105,7 @@ with col2:
         color='cab_type',
         color_discrete_map=color_map,
         labels={'hour': 'Hour', 'ride_count': 'Number of rides', 'cab_type': 'Cab type'},
-        title=('Ride demand by hour on weekend')
+        title=('Ride demand by hour on weekends')
     )
     fig_demand_on_hour_in_weekend.update_traces(mode='lines+markers')  
     fig_demand_on_hour_in_weekend.update_layout(xaxis=dict(dtick=4))
@@ -122,7 +122,7 @@ with col3:
         color='cab_type',
         color_discrete_map=color_map,
         labels={'dayofweek': 'Day of week', 'ride_count': 'Number of rides', 'cab_type': 'Cab type'},
-        title=('Ride demand by day on week')
+        title=('Ride demand by day of the week')
     )
     fig_demand_on_day_in_week.update_traces(mode='lines+markers')  
     fig_demand_on_day_in_week.update_layout(

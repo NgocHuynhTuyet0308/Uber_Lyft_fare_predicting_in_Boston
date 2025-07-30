@@ -10,8 +10,8 @@ describe_raw_data = st.Page('./pages/describe_raw_data.py', title='About this pr
 EDA_before_preprocessing = st.Page('./pages/EDA_before_preprocessing.py', title='EDA before preprocessing')
 EDA_after_preprocessing = st.Page('./pages/EDA_after_preprocessing.py', title='EDA after preprocessing')
 
-build_model_process = st.Page('./pages/build_model_process.py', title='Build model process')
-model_results = st.Page('./pages/model_results.py', title='Model results')
+build_model_process = st.Page('./pages/build_model_process.py', title='Model development process')
+model_results = st.Page('./pages/model_results.py', title='Model performance')
 
 pages = {
     'About': [describe_raw_data],

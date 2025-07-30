@@ -42,7 +42,7 @@ df_merge_data['minute'] = df_merge_data['time'].dt.minute
 
 # Encoding categorical features
 st.markdown("""
-- **Encoding categorical features**: Categorical features like destination, source, and category are encoded using **Target Mean Encoding**, where each category is replaced with the average ride price (price) corresponding to that category.
+- **Encoding categorical features**: Categorical features like destination, source, and category are encoded using **Target Mean Encoding**, where each category is replaced with the average ride price corresponding to that category.
 This preserves the relationship between categorical features and the target variable while converting them into numerical form.    
 """)
 df_merge_data['destination_encoded'] = df_merge_data.groupby('destination')['price'].transform("mean")

@@ -91,7 +91,7 @@ with col1:
         color='category',
         color_discrete_map=color_map,
         labels={'category': 'Category', 'price': 'Mean fare (USD)', 'distance_bin': 'Distance category'},
-        title='Impact of distance on fare'
+        title=f'Impact of distance on fare - {type}'
     )
     fig_scatter.update_traces(mode='lines+markers')  
     fig_scatter.update_layout(xaxis=dict(dtick=1)) 
@@ -100,7 +100,7 @@ with col1:
     df_merge_data_option['temp_rounded'] = df_merge_data_option['temp'].round(0)
     demand_on_temp = df_merge_data_option.groupby(['temp_rounded'])['price'].mean().reset_index()
     fig_temp = px.line(demand_on_temp, x='temp_rounded', y='price',
-                        title='Impact of temperature on fare',
+                        title=f'Impact of temperature on fare - {type}',
                         labels={'cab_type':'Cab type', 'temp_rounded': 'Temperature (℉)', 'price': 'Mean fare (USD)'})
     fig_temp.update_traces(line=dict(color=color))
     st.plotly_chart(fig_temp, use_container_width=True)
@@ -118,7 +118,7 @@ with col2:
                 y='price',
                 color='category',
                 labels={'hour': 'Hour', 'price': 'Standard deviation of ride fares', 'category': 'Category'},
-                title='Impact of hour on fare',
+                title=f'Impact of hour on fare - {type}',
                 color_discrete_map=color_map)
 
     fig_std_price_hour.update_traces(mode='lines+markers')  
@@ -135,7 +135,7 @@ with col2:
         color='category',
         color_discrete_map=color_map,
         labels={'category': 'Category', 'price': 'Mean fare (USD)'},
-        title='Impact of service category on fare'
+        title=f'Impact of service category on fare - {type}'
     )
     st.plotly_chart(fig_mean_price_category, use_container_width=True) 
 

@@ -55,7 +55,7 @@ st.markdown("""
     
 6. **Create "Merge_data" dataset**: Each record in the "Cab ride" dataset will be merged with the corresponding record from the weather dataset based on location and time (date and hour).
               
-**Note:** The code for these processing steps is available on GitHub.
+**Note:** The code for these processing steps is available on [GitHub](https://github.com/NgocHuynhTuyet0308/Uber_Lyft_fare_predicting_in_Boston/blob/main/notebooks/Data_preprocessing.ipynb).
 """)
 
 # Check missing values
